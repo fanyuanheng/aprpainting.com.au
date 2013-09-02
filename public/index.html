@@ -1,0 +1,501 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>APR Painting</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,300' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/sorting.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent to APR. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="effect_2">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<div class="filtr_bg">
+					<div class="slogan">
+						<div class="left_bord"></div>
+						<div class="slogan_text">since 2005</div>
+						<div class="right_bord"></div>
+					</div>
+				  <h1>APR Painting</h1>
+					<p><span>With over 7 years painting experience APR Painting is fast becoming one of Melbourne's premier painting companies</span></p>
+					<p><img src="images/footerv1.png" alt="acreditations" width="359" height="56">
+					  <a class="button" title="" data-slide="2"></a></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="inset_shadow"></div>
+	</div>
+</div>
+
+
+<div class="menu">	
+	<div class="container clearfix">
+		
+		<div id="nav">
+			<a class="btn_dropdown" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>
+			<ul class="navigation">
+				<li data-slide="2">About APR</li>
+				<li data-slide="4">Our Services</li>
+				<li data-slide="8">Portfolio</li>
+				<li data-slide="10">Contact</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2>About APR		</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_8">
+				<h4>Why choose our team?</h4>
+				<p>APR Painting Pty Ltd is an established professional painting group consisting of carefully selected, highly trained, qualified, and accredited Master Painters©, who take great pride in our impeccable work, excellent communication and customer service.</p>
+ 
+<p>In divisions such as education, health, property and facilities maintenance, government, hospitality, industrial and commercial buildings; APR Painting Pty Ltd are the experts.</p>
+ 
+<p>Using only the highest premium quality, APAS approved and environmentally aware paints, APR Painting Pty Ltd can tailor a specification to meet every building, and decorating need.</p>
+ 
+<p>A full “low VOC” (green standards) specification is easily attained.</p>
+<p>Over the years in business, we have painted hundreds of homes, units, factories, commercial office spaces and much more. There is no painting job in Melbourne too big that we can’t handle.</p>
+			</div>
+			<div class="grid_4 omega">
+				<h4>Testimonials</h4>
+				<div class="testim_in">
+					<div class="testim_block">
+						My home was repainted to a high standard and was done in no time! Petra and his team are fantastic, five stars.
+						<span></span>
+					</div>
+					<div class="author">Alex Wu</div>
+					<div class="clear"></div>
+				</div>
+				<div class="testim_in">
+					<div class="testim_block">
+						APR Painting renovated the look of the service station, paying the utmost attention to detail and were very acommodating to 		our needs going above and beyond.
+						<span></span>
+					</div>
+					<div class="author">Manager, Caltex</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+			<div class="about_bord"></div>
+			
+			<div class="grid_12">
+				<h4>Other Info</h4>
+				<div id="jcarousel">
+					<ul id="mycarousel" class="jcarousel-skin-tango">
+						<li>
+							<img src="images/icon1.png" />
+							<p>OH&amp;S Compliance</p>
+							<div class="clear"></div>
+							APR Painting Pty Ltd complies with all OH&S requirements specified in the Occupational Health and Safety Act 2004 and the			 							Occupational Health and Safety Regulations 2007. We are able to provide documentation for Health and Safety, 																						Environmental, Drug & Alcohol and Workplace harassment.
+						</li>
+						<li>
+							<img src="images/icon2.png" />
+						  <p>Standards</p>
+							<div class="clear"></div>
+							•	APAS
+							•	Finishing Trades Association Australia
+							•	Enviro Painters
+							•	Green (low VOC)
+							•	Master Painter’s Association Victoria
+							•	Haymes Paints
+							•	Ultra Premium VS Premium
+							•	Guarantees / maintenance
+							•	OH&S compliance
+						</li>
+						<li>
+							<img src="images/icon3.png" />
+							<p>Customer Service</p>
+							<div class="clear"></div>
+							The moment we walk onto a job you will be greeted by our painters with respect and kindness. We value our customers in 				choosing APR Painting and therefore we pay them back with respect. Apart from the great customer service you will expect to receive from us, we also have common courtesy to your house or office and always cover up all of your belongings before we begin any job.
+						</li>
+						<li>
+							<img src="images/icon4.png" />
+							<p>Consultations</p>
+							<div class="clear"></div>
+							Professional colour consultation & advice before any painting project even begins, our experienced painters will provide 			you with free colour consultations and offer you professional advice and tips so you can make the right decisions.
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2>Our services</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_7">
+				<h4>Specialties</h4>
+				<div class="educ_block">
+					<p class="fleft">Commercial Painting</p>
+					<div class="clear"></div>
+					Our primary business is doing commercial painting projects such as factories, multi-site developments, office blocks, educational facilities and retail stores.
+				</div>
+				<div class="educ_block">
+					<p class="fleft">House Painting</p>
+					<div class="clear"></div>
+					The other large part of our business is painting new houses, house renovations and extensions, units, town houses and apartments. Our team is fully equipped to take on any house painting project.
+				</div>
+                <div class="educ_block">
+					<p class="fleft">Interior Painting</p>
+					<div class="clear"></div>
+					If you’re after some amazing interior painting and decorating services, then our painters can provide you with the best colour consultation advice for your next interior painting project.
+				</div>
+                <div class="educ_block">
+					<p class="fleft">Exterior Painting</p>
+					<div class="clear"></div>
+					Whether you’re after painting a rendered wall, or a new decking - we have it all covered. We use only the toughest weather paints to provide you with a long lasting look.
+				</div>
+			</div>
+			<div class="grid_5 omega">
+				<h4>Coatings and additonal services</h4>
+				<ul id="skills_block">
+					<p>Protective coatings<b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+					<p>Epoxy Floor coatings<b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+					<p>Render & Texture coatings<b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+					<p>Property Maintence <b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+                    <p>Insurance work <b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+                    <p>Roof restoration/spraying <b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+                    <p>Timber floor sanding & polishing <b>100%</b></p>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%"></div>
+					</div>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2>Portfolio</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="contenet">
+			<div id="options">
+				<ul id="filters" class="option-set" data-option-key="filter">
+					<li><a href="#filter" data-option-value="*" class="btn dark_btn selected"><span></span>All</a></li>
+					<li><a href="#filter" data-option-value=".category01"><span></span>Commercial</a></li>
+					<li><a href="#filter" data-option-value=".category02"><span></span>Residential</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="overflow_hidden">
+				<div class="gallery-list">
+					<!-- portfolio_block -->
+					<div class="projects">
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/1.jpg" alt="" />
+								<div class="item_description">
+									<p>Woolworths Petrol Station</p>
+									Marriot Waters Shopping Centre
+									Cnr Thompsons Road & Marriott Boulevard, Lyndhurst
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/2.jpg" alt="" />
+								<div class="item_description">
+									<p>Somerville Kindergarten</p>
+									Eramosa Road East
+									Somerville
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/3.jpg" alt="" />
+								<div class="item_description">
+									<p>Frankston PARC (Prevention and Recovery Care Facility)</p>
+									Beach Street, Frankston
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/4.jpg" alt="" />
+								<div class="item_description">
+									<p>Be A Star Bridal Store</p>
+									Nepean Hwy, Cheltenham
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/5.jpg" alt="" />
+								<div class="item_description">
+									<p>Highway Medical Centre</p>
+									Nepean Hwy, Cheltenham
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/6.jpg" alt="" />
+								<div class="item_description">
+									<p>Coomoora Reserve Community Pavilion</p>
+									COOMOORA ROAD, SPRINGVALE SOUTH
+                                </div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/7.jpg" alt="" />
+								<div class="item_description">
+									<p>Dandenong North East Kindergarten</p>
+									Ingrid St Dandenong
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/8.jpg" alt="" />
+								<div class="item_description">
+									<p>Hungry Jacks</p>
+									Taylors Rd  Keilor Downs
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/9.jpg" alt="" />
+								<div class="item_description">
+									<p>Caltex Australia Petroleum </p>
+									Camberwell Rd, Hawthorn
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/9.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+                        <div class="img_block element category02" data-category="category02">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/10.jpg" alt="" />
+								<div class="item_description">
+									<p>Private Residence</p>
+									Rockleigh Park Rd Narre Warren North
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/10.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+                        <div class="img_block element category01" data-category="category01">
+							<div class="hover_img">
+								<img class="portf_img" src="images/portfolio/11.jpg" alt="" />
+								<div class="item_description">
+									<p>City of Kingston Building</p>
+									Nepean Highway Cheltenham 
+								</div>
+								<span class="portfolio_zoom"><a href="images/portfolio/full/11.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>   
+					<!-- //portfolio_block -->   
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2>Contact</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_12">
+			<p>•	<b>Phone</b> 1300 15 88 22
+•	<b>Mobile</b> 0432 383 274
+•	<b>Fax</b> 03 8774 2017</p>
+			<p>•	<b>Email</b> petrin@aprpainting.com.au
+•	<b>Address</b> PO BOX 808, 
+Endeavour Hills, 
+Victoria 3802</p>
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<div class="grid_6">
+							<input type="text" name="name" value="" placeholder="Name" />
+							<input type="text" name="subject" value="" placeholder="Phone" />
+							<input type="text" name="email" value="" placeholder="Email" />
+						</div>
+						<div class="grid_6 omega"><textarea name="message" id="message" placeholder="Message"></textarea></div>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Clear Form" />
+						<input type="submit" class="contact_btn send_btn" value="Send" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>		
+		<div class="clear"></div>
+
+	</div>
+	
+	<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed"></iframe></div>
+	
+</div>
+
+
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">John Doe &copy; 2020 | <a href="javascript:void(0);">Privacy Policy</a></div>
+		<div id="back_top"><a class="button" title="" data-slide="1"></a></div>
+	</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
