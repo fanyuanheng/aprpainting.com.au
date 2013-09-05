@@ -54,6 +54,14 @@ a:visited {
 	margin-left:0;
 }
 
+#site-logo {
+  float: left; 
+  margin: 15px 15px 21px;
+  max-width: 120px;
+  max-height: 60px;
+  cursor: pointer;
+}
+
 #nav {
 	text-align: right;
 }

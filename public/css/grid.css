@@ -116,6 +116,10 @@
 		box-shadow:0 0 4px #000;
 	}
 	
+	#site-logo {
+	  display:none;
+	}
+	
 	ul.navigation {width:200px;padding:10px 0;margin:0;}
 /* ______ //RESPONS_MENU ________ */
 
